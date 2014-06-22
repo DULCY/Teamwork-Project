@@ -71,14 +71,27 @@
                     </ul>
                 </div>
                 <div class="fbBoxSize">
+                    <div style="max-height:160px; overflow:hidden; background:#FFF;">
+                        <fb:like-box href="http://www.facebook.com/SoftwareUniversity"
+                                     data-width="300"
+                                     data-height="182"
+                                     data-show-faces="true"
+                                     data-border-color="#D6D6D6"
+                                     data-stream="false"
+                                     data-header="false">
+                        </fb:like-box>
+                    </div>
+
+                    <div id="fb-root"></div>
+
                     <script>(function(d, s, id) {
                         var js, fjs = d.getElementsByTagName(s)[0];
                         if (d.getElementById(id)) return;
                         js = d.createElement(s); js.id = id;
-                        js.src = "//connect.facebook.net/bg_BG/sdk.js#xfbml=1&version=v2.0";
+                        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
                         fjs.parentNode.insertBefore(js, fjs);
-                    }(document, 'script', 'facebook-jssdk'));</script>
-                    <div class="fb-like-box" data-href="https://www.facebook.com/SoftwareUniversity" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+                    }(document, 'script', 'facebook-jssdk'));
+                    </script>
                 </div>
             </div>
         </div>
