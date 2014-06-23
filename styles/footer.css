@@ -1,0 +1,90 @@
+body,footer{
+    padding: 0;
+    margin: 0;
+}
+.footerContainer{
+    display: inline-block;
+    text-align: center;
+    background-color: #234465;
+    width: 100%;
+
+}
+.actionsWidth, .universityWidth, .friendsWidth, .rightsWidth, .fbBoxSize{             /* fonts*/
+    display: inline-block;
+    font-family: 'PT Sans', Tahoma, sans-serif;
+    font-size: 13px;
+    padding: 0px 15px 0px 15px;
+}
+.universityWidth, .friendsWidth, .rightsWidth, .fbBoxSize{
+    text-align: left;
+
+}
+.actionsWidth, .universityWidth, .friendsWidth {                                      /*columns width*/
+    width: 13%;
+}
+.rightsWidth, .fbBoxSize {                                                            /*columns width*/
+    width: 18%;
+}
+.actionsWidth a{                                                                      /*first column styles*/
+
+    display: block;
+    border: 2px solid #FF9C00;
+    padding: 10px;
+    text-align: center;
+}
+.actionsWidth a:hover{
+    color: #eee;
+    background-color: #FF9C00;
+}
+.actionsWidth a:first-of-type{                                                        /*first column styles*/
+    margin-bottom: 10px;
+}
+footer a{
+    color: #eee;
+    text-decoration: none;
+}
+footer a:hover{
+    color: #FF9C00;
+
+}
+h2 {
+    color: #FF9C00;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+
+}
+footer ul {
+    list-style-type: none;
+    text-align: left;
+    margin-left: -40px;
+}
+footer ul li{
+    margin-bottom: 10px;
+}
+.rightsWidth span {
+    color: #eee;
+}
+.rightsWidth ul li {
+    display: inline-block;
+    margin-right: 5px;
+}
+.universityWidth{
+    margin-top: 40px;
+}
+.actionsWidth{
+    position:relative;
+    bottom: 105px;
+}
+.friendsWidth{
+    position: relative;
+    bottom: 130px;
+}
+.rightsWidth{
+    position: relative;
+    bottom: 86px;
+}
+.fbBoxSize{
+    position: relative;
+    bottom: 40px;
+}
