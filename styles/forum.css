@@ -1,0 +1,60 @@
+body {
+    font-family: 'PT Sans', Tahoma, sans-serif;
+    background-color: #eeeeee;
+    font-size: 1rem;
+    margin-left: 8%;
+}
+#forum-nav {
+    margin-left: -40px;
+}
+#forum-nav li {
+    list-style: none;
+    display: inline-block;
+}
+#forum-nav a {
+    color: white;
+    text-decoration: none;
+    background-color: #ff7e00;
+    padding: 8px;
+    font-size: 0.9rem;
+}
+#forum-nav li:first-child a {
+    background-color: #ff9c00;
+}
+#forum-nav a:hover {
+    background-color: #faa14b;
+}
+#forum-nav li:first-child a:hover {
+    background-color: #d35400;
+}
+aside {
+    width: 20%;
+}
+aside h4 {
+    color: white;
+    font-weight: normal;
+    font-size: 0.9rem;
+    background-color: #234465;
+    padding: 15px;
+}
+aside li {
+    list-style: none;
+    margin-left: -40px;
+    background-color: brown;
+}
+aside div:first-child a {
+    color: #234465;
+    text-decoration: none;
+    padding: 5px;
+    background-color: red;
+}
+aside span {
+    text-align: right;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    background-color: #ff9c00;
+    border-radius: 20px;
+}
+aside a span {
+    padding-left: 30%;
+}
