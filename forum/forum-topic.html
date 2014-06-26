@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../styles/forum.css">
+    <script src="../scripts/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+    <div id="forum-nav">
+        <ul>
+            <li>
+                <a href="#">
+                    Задай въпрос
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Правила
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Потребители
+                </a>
+            </li>
+        </ul>
+    </div>
+    <aside>
+        <div>
+            <h4>
+                КАТЕГОРИИ
+            </h4>
+            <ul>
+                <li>
+                    <a href="#">Видове форум юзъри <span>223</span> </a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h4>
+                НАЙ-ЧЕСТО ИЗПОЛЗВАНИ ТАГОВЕ
+            </h4>
+            <a href="#">C#</a>
+            <a href="#">Java</a>
+        </div>
+    </aside>
+    <main>
+        <div>
+            <div class="topic-box">
+                <h2>
+                    <a href="#">Заглавие на статия</a>
+                </h2>
+                <div class="meta-div">
+                    <div class="meta-user"></div>
+                    <a href="#" class="meta">User</a>
+                    <span class="meta-gray">(points: 0)</span>
+                    <div class="meta-time"></div>
+                    <time class="meta-gray">21/06/2014 17:00:29</time>
+                    <div class="meta-topic"></div>
+                    <span class="meta-gray">Topic</span>
+                </div>
+                <div>
+                    <div class="user-box">
+                        <img class="avatar" src="tesfda">
+                        <div>
+                            <div class="votes-buttons">
+                                <div class="button-up">
+                                    <input id="vote-up" type="image" src="../images/forum-up-arrow.png">
+                                </div>
+                                <div class="button-down">
+                                    <input id="vote-down" type="image" src="../images/forum-down-arrow.png">
+                                </div>
+                            </div>
+                            <div class="meta-box">
+                                <div class="meta-numbers"><input id="post-votes" type="text" value="1" readonly></div>
+                                <div class="meta-text">votes</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="topic-content">
+                        <p>
+                        Здравейте, Тук ще можем да споделяме домашните в малко по-публичен вариант. Всеки ще може да качи домашното към определена лекци и след това всички можем да направим проверка и да дискутираме резултатът и въпросите възникнали в процеса. Аз ще правя еднин отговор за всяка лекция и ще си пишем вътре в него. Препоръчвам да добавяте домашните в отделни архив файлове за всеки task за да можем лесно и бързо да се ориентираме кой за какво точно говори. Поздрави и приятно учене!
+                        </p>
+                    </div>
+                    <hr class="lite"/>
+                    <div>
+                        <p class="topic-tags">
+                            Тагове:
+                            <a href="#">Java</a>
+                            <a href="#">C#</a>
+                        </p>
+                    </div>
+                    <hr class="lite"/>
+                </div>
+                <a class="button-answer" href="#">Отговори</a>
+                <a class="button-report" href="#">Докладвай</a>
+            </div>
+        </div>
+    </main>
+    <script>
+        var votes = $("#post-votes").val();
+        $("#vote-up").on("click", function(){
+            var votes = $("#post-votes").val();
+            var votesInt = parseInt(votes);
+            var sum = votesInt + 1;
+            $("#post-votes").val(sum);
+        });
+        $("#vote-down").on("click", function() {
+            var votes = $("#post-votes").val();
+            var votesInt = parseInt(votes);
+            var sum = votesInt - 1;
+            $("#post-votes").val(sum);
+        });
+    </script>
+</body>
+</html>

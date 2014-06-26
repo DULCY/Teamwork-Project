@@ -57,6 +57,7 @@ aside li {
     word-wrap: break-word;
 }
 aside div:first-child a {
+    display: block;
     color: #234465;
     padding: 13px 10px 13px 10px;
     font-size: 0.9rem;
@@ -93,12 +94,14 @@ main {
 main h1 {
     color: #5a5a5a;
 }
-hr { display: block;
+hr {
+    display: block;
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
     margin: 1em 0;
-    padding: 0; }
+    padding: 0;
+}
 .topic-box {
     background-color: white;
     padding: 0 15px 15px 15px;
@@ -124,12 +127,14 @@ hr { display: block;
     background: url("../images/softUni_Icons.png") 42px 0;
     width: 19px;
     height: 14px;
+    margin-left: 10px;
 }
 .meta-topic {
     display: inline-block;
     background: url("../images/softUni_Icons.png") 20px 0;
     width: 19px;
     height: 14px;
+    margin-left: 10px;
 }
 .meta-div {
     padding-left: 15px;
@@ -155,31 +160,31 @@ hr { display: block;
     vertical-align: top;
     border-left: 1px solid #cbcbcb;
 }
-.meta-numbers {
+.meta-numbers input {
+    border: 0;
     color: #ff9c00;
+    width: 40px;
     text-align: center;
     font-size: 1.3rem;
-    padding: 5px;
+    padding: 5px 0 0 0;
 }
 .meta-text {
     color: #42a8d3;
     text-align: center;
     font-size: 0.7rem;
 }
-button {
-    display: block;
-    padding: 0;
-    background-color: white;
-    border: 0;
-    width: 14px;
-    height: 10px;
-    margin: 10px 5px 12px 5px;
-}
 .button-up {
     display: block;
     width: 14px;
     height: 10px;
     padding: 5px;
+    outline: none;
+}
+#vote-up {
+    outline: none;
+}
+#vote-down {
+    outline: none;
 }
 .button-down {
     display: block;
@@ -189,4 +194,70 @@ button {
 }
 .button-up:hover {
     color: #00cc33;
+}
+.topic-content {
+    display: inline-block;
+    width: 78%;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.user-box {
+    display: inline-block;
+    width: 100px;
+    vertical-align: top;
+    padding: 10px;
+}
+.user-box .votes-buttons {
+    margin-left: 10px;
+}
+.meta-gray {
+    color: #adadad;
+    font-size: 0.8rem;
+}
+.avatar {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+.topic-content {
+    font-size: 0.9rem;
+    color: #5a5a5a;
+}
+.topic-tags {
+    color: #adadad;
+    font-size: 0.7rem;
+    margin: 5px;
+}
+.topic-tags a {
+    color: #234465;
+    text-decoration: underline;
+}
+.topic-tags a:hover {
+    color: black;
+}
+.lite {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #eeeeee;
+    margin: 0;
+    padding: 0;
+}
+.button-answer, .button-report {
+    display: inline-block;
+    font-size: 0.7rem;
+    color: white;
+    background-color: #ff9c00;
+    padding: 5px;
+    margin-top: 10px;
+}
+.button-report {
+    float: right;
+}
+.button-answer:hover {
+    background-color: #88c3ec;
+    text-decoration: none;
+}
+.button-report:hover {
+    text-decoration: none;
 }

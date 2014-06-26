@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="../styles/forum.css">
+    <script src="../scripts/jquery-2.1.1.min.js"></script>
 </head>
 <body>
     <div id="forum-nav">
@@ -32,10 +33,7 @@
             </h4>
             <ul>
                 <li>
-                    <a href="#">
-                        Видове форум юзъри
-                        <span>223</span>
-                    </a>
+                    <a href="#">Видове форум юзъри <span>223</span> </a>
                 </li>
             </ul>
         </div>
@@ -67,32 +65,49 @@
                 <hr/>
                 <div>
                     <div class="votes-buttons">
-                        <form class="button-up">
-                            <input type="image" src="../images/forum-up-arrow.png">
-                        </form>
-                        <form class="button-down">
-                            <input type="image" src="../images/forum-down-arrow.png">
-                        </form>
+                        <div class="button-up">
+                            <input id="vote-up" type="image" src="../images/forum-up-arrow.png">
+                        </div>
+                        <div class="button-down">
+                            <input id="vote-down" type="image" src="../images/forum-down-arrow.png">
+                        </div>
                     </div>
                     <div class="meta-box">
-                        <div class="meta-numbers">1</div>
+                        <div class="meta-numbers"><input id="post-votes" type="text" value="1" readonly></div>
                         <div class="meta-text">votes</div>
                     </div>
                     <div class="meta-box">
-                        <div class="meta-numbers">338</div>
+                        <div class="meta-numbers"><input id="post-views" type="text" value="338" readonly></div>
                         <div class="meta-text">views</div>
                     </div>
                     <div class="meta-box">
-                        <div class="meta-numbers">9</div>
+                        <div class="meta-numbers"><input id="post-answers" type="text" value="9" readonly></div>
                         <div class="meta-text">answers</div>
                     </div>
                     <div class="answered-box">
                         <span class="meta">Answered: some user</span>
                         <time>22/06/2014 13:36:40</time>
+
                     </div>
+
                 </div>
             </div>
         </div>
     </main>
+<script>
+    var votes = $("#post-votes").val();
+    $("#vote-up").on("click", function(){
+        var votes = $("#post-votes").val();
+        var votesInt = parseInt(votes);
+        var sum = votesInt + 1;
+        $("#post-votes").val(sum);
+    });
+    $("#vote-down").on("click", function() {
+        var votes = $("#post-votes").val();
+        var votesInt = parseInt(votes);
+        var sum = votesInt - 1;
+        $("#post-votes").val(sum);
+    });
+</script>
 </body>
 </html>
