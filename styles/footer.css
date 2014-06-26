@@ -13,14 +13,17 @@ body,footer{
     display: inline-block;
     font-family: 'PT Sans', Tahoma, sans-serif;
     font-size: 13px;
-    padding: 0px 15px 0px 15px;
+    padding: 0 15px 0 10px;
 }
 .universityWidth, .friendsWidth, .rightsWidth, .fbBoxSize{
     text-align: left;
 
 }
-.actionsWidth, .universityWidth, .friendsWidth {                                      /*columns width*/
-    width: 13%;
+.actionsWidth {                                      /*columns width*/
+    width: 11%;
+}
+.universityWidth, .friendsWidth{
+    width: 11%  ;
 }
 .rightsWidth, .fbBoxSize {                                                            /*columns width*/
     width: 18%;
@@ -82,9 +85,12 @@ footer ul li{
 }
 .rightsWidth{
     position: relative;
-    bottom: 86px;
+    bottom: 7.2rem;
 }
-.fbBoxSize{
-    position: relative;
-    bottom: 40px;
+iframe{
+    overflow:hidden;
+    height: 15rem;
+    width: 16rem;
+    margin-top: 2%;
+    background-color: rgb(242,245,245);
 }
