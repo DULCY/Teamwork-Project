@@ -9,7 +9,6 @@ body,section{
 	width:100%;
 }
 .leftColumn, .middleColumn, .rightColumn{
-	border:1px solid black;
 	display:inline-block;
 	width: 28%;
     font-family: 'PT Sans', Tahoma, sans-serif;
