@@ -41,7 +41,7 @@ time {
     background-color: #d35400;
 }
 aside {
-    width: 20%;
+    width: 21%;
     float: left;
 }
 aside h4 {
@@ -116,6 +116,9 @@ hr {
     margin-top: 0;
     padding-left: 15px;
 }
+.topic-box input {
+    background-color: white !important;
+}
 .meta-user {
     display: inline-block;
     background: url("../images/softUni_Icons.png") 0 0;
@@ -161,6 +164,7 @@ hr {
     border-left: 1px solid #cbcbcb;
 }
 .meta-numbers input {
+    background-color: #eeeeee;
     border: 0;
     color: #ff9c00;
     width: 40px;
@@ -260,4 +264,8 @@ hr {
 }
 .button-report:hover {
     text-decoration: none;
+}
+.topic-box-answer {
+    padding-top: 20px;
+    margin-top: 10px;
 }
