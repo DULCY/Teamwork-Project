@@ -5,12 +5,11 @@ body,section{
 
 #sectionContainer{
     background-color: #eeeeee;
-	border:solid 1px red;
 	font-size: 0;
 	width:100%;
 }
 .leftColumn, .middleColumn, .rightColumn{
-	border:solid 1px black;
+	border:1px solid black;
 	display:inline-block;
 	width: 28%;
     font-family: 'PT Sans', Tahoma, sans-serif;
@@ -40,4 +39,24 @@ body,section{
 
 .caption{
 	background:yellow;
+}
+
+.upcomingCoursesSec{
+	margin-bottom:38%;
+}
+
+.rightColumn div{
+	display:inline-block;
+}
+
+.rightColumn img{
+	display:block;
+}
+
+.padding{
+	margin-top:30%;
+}
+
+.rightColLink{
+	display:block;
 }
