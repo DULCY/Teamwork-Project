@@ -32,6 +32,15 @@ body,section{
     background-color: #FF9C00;
 }
 
+.upcomingCoursesFirst, .upcomingCoursesSec{
+	border-top:1px solid black;
+}
+
+.upcomingCoursesSec{
+	border-bottom:1px solid black;
+}
+
+
 .actions a:first-of-type{                                                        /*first column styles*/
     margin-bottom: 10px;
 }
