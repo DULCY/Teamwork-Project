@@ -2,116 +2,110 @@ html,body, header, div, ul, nav, li, a, img {
     padding: 0;
     margin: 0;
 }
-.container{
-    width: 85%;
-    height: 115px;
-    margin: 0 auto;
+body{
+    background-color: #234465;
+    color: white;
 }
 header{
-    width: 100%;
-    background-color: #234465;
+    margin-top: 20px;
 }
 ul{
     list-style-type: none;
 }
-ul li{
-    display: inline-block;
-    padding: 7px 5px 7px 5px;
-}
-ul li:hover{
-    background-color: #428bca;
-    border-radius: 5px;
-}
-.dropdown-menu{
-    display: none;
-    position: absolute;
-    top:97px;
-    background-color: #234465;
-    border: 1px solid #1D3955;
-    border-radius: 0 0 5px 5px;
 
+.nav>li>a:hover{
+    background-color: #428bca;
+    /*border-radius: 5px;*/
+}
+.nav .open>a:focus{
+    background-color: #FF9C00;
+}
+a{
+    color: white;
+    font-family:sans-serif;
+    font-size:14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.dropdown-menu li a{
+    color: white;
+    font-family:sans-serif;
+    font-size:14px;
+    padding-left: 15px;
+    line-height: 20px;
+    text-transform: none;
+}
+.dropdown .dropdown-menu {
+    background-color: #234465;
+    width: 310px;
+    position: absolute;
+    left: 0;
+    right: auto;
+    /*border: 1px solid #1D3955;*/
+    /*border-radius: 0 0 5px 5px;*/
+}
+.dropdown .dropdown-menu li:hover{
+    background-color: #FF9C00;
+}
+.dropdown .dropdown-menu li a:hover{
+    background: none;
+    background-color: #FF9C00;
+    color: #ffffff;
 }
 .dropdown-menu li{
     display: block;
     padding: 5px 0 5px 10px;
     border-bottom: 1px solid #435F7B;
     border-radius: 0;
-    text-align: left;
-    height: 25px;
-    width: 310px;
-}
-.dropdown-menu a{
-    font-weight: normal;
-    font-size: 12px;
-    vertical-align: middle;
-    padding: 10px 200px 15px 15px;
-    width: 300px;
-}
-.dropdown-menu li:hover{
-    background-color: #FF9C00;
-    border-radius: 0;
-}
-ul .dropdown:hover > .dropdown-menu{
-    display: block;
-}
-nav a{
-    padding: 5px;
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    font-family:  sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-}
-.leveller{
-     padding-right: 0;
-}
-.logo-container{
-    width: 20%;
-    display: inline-block;
-    margin-top: 20px;
+    min-width: 180px;
 }
 .logo-container img{
     height: 65px;
     width: 255px;
 }
-.nav-container{
-    display: inline-block;
-    width: 79%;
-}
-.search-nav div{
-    display: inline-block;
-}
-.search-nav{
-    text-align: right;
-}
-.user-info a:hover{
-    text-decoration: underline;
-}
 .user-info li:hover{
     background-color: #234465;
 }
-.menu{
-    text-align: right;
-}
-.search-btn{
-    height: 30px;
-    width: 30px;
-    background:url(../images/magn-glass-icon17.png)no-repeat transparent center;
-    position: absolute;
-    top: 30px;
-    right: 8.4em;
+.btn{
+    height: 34px;
+    width: 34px;
+    background:url(../images/magn-glass-icon17.png)no-repeat white center;
     border: 1px solid transparent;
     border-left: 1px solid grey;
 }
-.search-btn:hover{
+.btn:hover{
     background-color: #428bca;
 }
-.search{
-    width: 20%;
+.notifications{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../images/notificationsIcon.png")no-repeat transparent center;
+    vertical-align: middle;
+    margin-right: 10px;
 }
-.search input{
-    width: 92%;
-    padding: 7px 5px 7px 5px;
-    border-radius: 5px;
+.navbar-default{
+    background: none;
+    border: none;
+    box-shadow: none;
 }
+.collapse li {
+    float: left;
+}
+.collapse.in li{
+    float: none;
+    border-bottom: 1px solid black;
+}
+.collapse.in .dropdown-menu{
+    width: 100%;
+    border: none;
+    box-shadow: none;
+}
+.collapse.in{
+    min-height: 300px;
+    min-width: 240px;
+    border: none;
+    box-shadow: none;
+}
+
+

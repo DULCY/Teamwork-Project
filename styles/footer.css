@@ -5,6 +5,9 @@ body{
 footer{
     margin-top: 50px;
 }
+.actions div{
+    margin-top: 20px;
+}
 .actions a{
     display: block;
     border: 2px solid #FF9C00;
@@ -39,8 +42,8 @@ footer ul {
 footer ul li{
     margin-bottom: 10px;
 }
-.rights span {
-    color: #eee;
+footer span {
+    color: white;
 }
 .socialLinks li{
     display: inline-block;
