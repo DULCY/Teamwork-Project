@@ -57,12 +57,15 @@ aside div:first-child a {
     display: block;
     color: #234465;
     padding: 13px 10px 13px 10px;
-    font-size: 12px;
+    font-size: 13px;
+    text-transform: none;
+    font-weight: normal;
 }
 aside div:first-child a:hover {
     background-color: #dbdbdb;
     border-radius: 5px;
     text-decoration: none;
+    color: #ff9c00;
 }
 aside span {
     font-size: 12px;
@@ -110,7 +113,8 @@ hr {
     box-shadow: 1px 1px 8px #c5c5c5;
 }
 .topic-box h2 {
-    padding: 20px 0 15px 0;
+    margin-top: 10px;
+    padding: 20px 0 0 0;
     font-weight: normal;
 }
 .topic-box h2 a{
@@ -183,7 +187,7 @@ hr {
 .meta-text {
     color: #42a8d3;
     text-align: center;
-
+    font-size: 11px;
 }
 .button-up {
     display: block;
@@ -221,7 +225,7 @@ hr {
 }
 .meta-gray {
     color: #adadad;
-
+    font-size: 13px;
 }
 .avatar {
     width: 100px;
@@ -234,23 +238,27 @@ hr {
 }
 .topic-tags {
     color: #adadad;
-
+    font-size: 11px;
     margin: 5px;
 }
 .topic-tags a {
     color: #234465;
     text-decoration: underline;
+    text-transform: none;
+    font-size: 11px;
+    font-weight: normal;
 }
 .topic-tags a:hover {
     color: black;
 }
 .button-answer, .button-report {
     display: inline-block;
-
+    font-size: 11px;
     color: white;
     background-color: #ff9c00;
     padding: 5px;
     margin-top: 10px;
+    text-transform: none;
 }
 .button-report {
     float: right;
