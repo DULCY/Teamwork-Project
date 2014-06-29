@@ -16,11 +16,15 @@ body,section{
     padding: 0px 15px 0px 15px;
 }
 
+<<<<<<< .mine
+=======
 .upcomingCoursesFirst, .upcomingCoursesSec{
 	padding-top:15px;
 	padding-bottom:15px;
 	margin-bottom:0px;
 }
+>>>>>>> .r40
+
 
 .actions a{  
     border: 2px solid #FF9C00;
