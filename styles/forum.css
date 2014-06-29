@@ -15,10 +15,12 @@ a:hover {
 }
 time {
     color: #adadad;
-    font-size: 0.8rem;
+    font-size: 1.3rem;
 }
 #forum-nav {
-    margin-left: -40px;
+    float: left;
+    display: block;
+    margin-left: -25px;
 }
 #forum-nav li {
     list-style: none;
@@ -28,7 +30,7 @@ time {
     color: white;
     background-color: #ff7e00;
     padding: 8px;
-    font-size: 0.9rem;
+    font-size: 1.4rem;
 }
 #forum-nav li:first-child a {
     background-color: #ff9c00;
@@ -41,12 +43,13 @@ time {
     background-color: #d35400;
 }
 aside {
-    width: 21%;
+    clear: both;
     float: left;
+    width: 20%;
 }
 aside h4 {
     color: white;
-    font-size: 0.9rem;
+    font-size: 1.4rem;
     background-color: #234465;
     padding: 15px;
     word-wrap: break-word;
@@ -60,7 +63,7 @@ aside div:first-child a {
     display: block;
     color: #234465;
     padding: 13px 10px 13px 10px;
-    font-size: 0.9rem;
+    font-size: 1.4rem;
 }
 aside div:first-child a:hover {
     background-color: #dbdbdb;
@@ -68,7 +71,7 @@ aside div:first-child a:hover {
     text-decoration: none;
 }
 aside span {
-    font-size: 0.8rem;
+    font-size: 1.3rem;
     float: right;
     text-align: center;
     padding: 2px 10px 2px 10px;
@@ -78,7 +81,7 @@ aside span {
 }
 aside div:nth-child(2) a {
     color: #234465;
-    font-size: 0.8rem;
+    font-size: 1.3rem;
     background-color: #dbdbdb;
     padding: 5px;
     border-radius: 5px;
@@ -88,8 +91,7 @@ aside div:nth-child(2) a:hover {
 }
 main {
     display: inline-block;
-    width: 60%;
-    margin-left: 40px;
+
 }
 main h1 {
     color: #5a5a5a;
@@ -112,7 +114,7 @@ hr {
 }
 .topic-box h2 a{
     color: #234465;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     margin-top: 0;
     padding-left: 15px;
 }
@@ -144,11 +146,12 @@ hr {
 }
 .meta {
     color: #234465;
-    font-size: 0.8rem;
+    font-size: 1.3rem;
 }
 .votes-buttons {
     display: inline-block;
     vertical-align: top;
+    margin-top: 5px;
 }
 .meta-box {
     display: inline-block;
@@ -169,13 +172,13 @@ hr {
     color: #ff9c00;
     width: 40px;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     padding: 5px 0 0 0;
 }
 .meta-text {
     color: #42a8d3;
     text-align: center;
-    font-size: 0.7rem;
+    font-size: 1.2rem;
 }
 .button-up {
     display: block;
@@ -195,20 +198,17 @@ hr {
     width: 14px;
     height: 10px;
     padding: 5px;
+    margin-top: 10px;
 }
 .button-up:hover {
     color: #00cc33;
 }
 .topic-content {
-    display: inline-block;
-    width: 78%;
     margin-left: 20px;
     margin-top: 15px;
 }
 .user-box {
-    display: inline-block;
-    width: 100px;
-    vertical-align: top;
+    float: left;
     padding: 10px;
 }
 .user-box .votes-buttons {
@@ -216,7 +216,7 @@ hr {
 }
 .meta-gray {
     color: #adadad;
-    font-size: 0.8rem;
+    font-size: 1.3rem;
 }
 .avatar {
     width: 100px;
@@ -224,12 +224,12 @@ hr {
     padding: 10px;
 }
 .topic-content {
-    font-size: 0.9rem;
+    font-size: 1.4rem;
     color: #5a5a5a;
 }
 .topic-tags {
     color: #adadad;
-    font-size: 0.7rem;
+    font-size: 1.2rem;
     margin: 5px;
 }
 .topic-tags a {
@@ -246,10 +246,11 @@ hr {
     border-top: 1px solid #eeeeee;
     margin: 0;
     padding: 0;
+    clear: both;
 }
 .button-answer, .button-report {
     display: inline-block;
-    font-size: 0.7rem;
+    font-size: 1.2rem;
     color: white;
     background-color: #ff9c00;
     padding: 5px;

@@ -3,11 +3,21 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+
+    <link rel="stylesheet" href="../styles/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="../styles/forum.css">
+
     <script src="../scripts/jquery-2.1.1.min.js"></script>
+    <link rel="script" href="../scripts/js/bootstrap.min.js">
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no; target-densityDpi=device-dpi"/>
+
+
 </head>
 <body>
-    <div id="forum-nav">
+<div class="container">
+    <div id="forum-nav" class="col-x-12">
         <ul>
             <li>
                 <a href="#">
@@ -26,7 +36,7 @@
             </li>
         </ul>
     </div>
-    <aside>
+    <aside class="col-md-3 hidden-sm hidden-xs">
         <div>
             <h4>
                 КАТЕГОРИИ
@@ -45,8 +55,9 @@
             <a href="#">Java</a>
         </div>
     </aside>
-    <main>
 
+
+    <main class="col-md-9 col-xs-12">
 
         <div>
             <div class="topic-box">
@@ -81,9 +92,7 @@
                         </div>
                     </div>
                     <div class="topic-content">
-                        <p>
                         Здравейте, Тук ще можем да споделяме домашните в малко по-публичен вариант. Всеки ще може да качи домашното към определена лекци и след това всички можем да направим проверка и да дискутираме резултатът и въпросите възникнали в процеса. Аз ще правя еднин отговор за всяка лекция и ще си пишем вътре в него. Препоръчвам да добавяте домашните в отделни архив файлове за всеки task за да можем лесно и бързо да се ориентираме кой за какво точно говори. Поздрави и приятно учене!
-                        </p>
                     </div>
                     <hr class="lite"/>
                     <div>
@@ -129,9 +138,7 @@
                         </div>
                     </div>
                     <div class="topic-content">
-                        <p>
                             Здравейте, Тук ще можем да споделяме домашните в малко по-публичен вариант. Всеки ще може да качи домашното към определена лекци и след това всички можем да направим проверка и да дискутираме резултатът и въпросите възникнали в процеса. Аз ще правя еднин отговор за всяка лекция и ще си пишем вътре в него. Препоръчвам да добавяте домашните в отделни архив файлове за всеки task за да можем лесно и бързо да се ориентираме кой за какво точно говори. Поздрави и приятно учене!
-                        </p>
                     </div>
                     <hr class="lite"/>
                     <div>
@@ -150,6 +157,29 @@
 
 
     </main>
+
+
+    <aside class="col-xs-12 visible-sm visible-xs">
+        <div>
+            <h4>
+                КАТЕГОРИИ
+            </h4>
+            <ul>
+                <li>
+                    <a href="#">Видове форум юзъри <span>223</span> </a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h4>
+                НАЙ-ЧЕСТО ИЗПОЛЗВАНИ ТАГОВЕ
+            </h4>
+            <a href="#">C#</a>
+            <a href="#">Java</a>
+        </div>
+    </aside>
+</div>
+
     <script>
         var votes = $("#post-votes").val();
         $("#vote-up").on("click", function(){
