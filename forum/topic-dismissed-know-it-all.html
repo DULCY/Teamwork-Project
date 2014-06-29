@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" href="../styles/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../styles/forum.css">
+
+    <script src="../scripts/jquery-2.1.1.min.js"></script>
+    <link rel="script" href="../scripts/js/bootstrap.min.js">
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no; target-densityDpi=device-dpi"/>
+
+
+</head>
+<body>
+<div class="container">
+    <div id="forum-nav" class="col-x-12">
+        <ul>
+            <li>
+                <a href="#">
+                    Задай въпрос
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Правила
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Потребители
+                </a>
+            </li>
+        </ul>
+    </div>
+    <aside class="col-md-3 hidden-sm hidden-xs">
+        <div>
+            <h4>
+                Видове форум юзъри
+            </h4>
+            <ul>
+                <li>
+                    <a href="topic-newbie.html">Newbie<span>6</span> </a>
+                </li>
+                <li>
+                    <a href="topic-dismissed-know-it-all.html">Dismissed Know-it-All<span>623</span> </a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h4>
+                НАЙ-ЧЕСТО ИЗПОЛЗВАНИ ТАГОВЕ
+            </h4>
+            <a href="#">C#</a>
+            <a href="#">Java</a>
+        </div>
+    </aside>
+
+
+    <main class="col-md-9 col-xs-12">
+
+        <div>
+            <div class="topic-box">
+                <h2>
+                    <a href="#">Може ли да сте толкова зле?!</a>
+                </h2>
+                <div class="meta-div">
+                    <div class="meta-user"></div>
+                    <a href="#" class="meta">Dismissed Know-it-All</a>
+                    <span class="meta-gray">(points: 55)</span>
+                    <div class="meta-time"></div>
+                    <time class="meta-gray">17/06/2014 17:00:29</time>
+                    <div class="meta-topic"></div>
+                    <span class="meta-gray">Видове форум юзъри</span>
+                </div>
+                <div>
+                    <div class="user-box">
+                        <img class="avatar" src="tesfda">
+                        <div>
+                            <div class="votes-buttons">
+                                <div class="button-up">
+                                    <input class="vote-up" type="image" src="../images/forum-up-arrow.png">
+                                </div>
+                                <div class="button-down">
+                                    <input class="vote-down" type="image" src="../images/forum-down-arrow.png">
+                                </div>
+                            </div>
+                            <div class="meta-box">
+                                <div class="meta-numbers"><input class="post-votes" type="text" value="1" readonly></div>
+                                <div class="meta-text">votes</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="topic-content">
+                        Аз съм хейтъра. Имам огромно количество постове, защотото имам мнение по всички въпроси и отговарям крато. Мнението ми противоричи на всички останали и въпреки че трябва да ме игнорирате, привличам най-много внимание. Може да не знам какво говоря, но съм ГОЛЯМАТА работа.
+                    </div>
+                    <hr class="lite"/>
+                    <div>
+                        <p class="topic-tags">
+                            Тагове:
+                            <a href="#">Java</a>
+                            <a href="#">C#</a>
+                        </p>
+                    </div>
+                    <hr class="lite"/>
+                </div>
+                <a class="button-answer" href="#">Отговори</a>
+                <a class="button-report" href="#">Докладвай</a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </main>
+
+
+    <aside class="col-xs-12 visible-sm visible-xs">
+        <div>
+            <h4>
+                КАТЕГОРИИ
+            </h4>
+            <ul>
+                <li>
+                    <a href="#">Видове форум юзъри <span>223</span> </a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h4>
+                НАЙ-ЧЕСТО ИЗПОЛЗВАНИ ТАГОВЕ
+            </h4>
+            <a href="#">C#</a>
+            <a href="#">Java</a>
+        </div>
+    </aside>
+</div>
+
+    <script>
+        var votes = $("#post-votes").val();
+        $("#vote-up").on("click", function(){
+            var votes = $("#post-votes").val();
+            var votesInt = parseInt(votes);
+            var sum = votesInt + 1;
+            $("#post-votes").val(sum);
+        });
+        $("#vote-down").on("click", function() {
+            var votes = $("#post-votes").val();
+            var votesInt = parseInt(votes);
+            var sum = votesInt - 1;
+            $("#post-votes").val(sum);
+        });
+    </script>
+</body>
+</html>

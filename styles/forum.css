@@ -18,9 +18,8 @@ time {
     font-size: 1.3rem;
 }
 #forum-nav {
-    float: left;
     display: block;
-    margin-left: -25px;
+    margin: 10px 0 0 -25px;
 }
 #forum-nav li {
     list-style: none;
@@ -53,6 +52,7 @@ aside h4 {
     background-color: #234465;
     padding: 15px;
     word-wrap: break-word;
+    text-transform: uppercase;
 }
 aside li {
     list-style: none;
@@ -103,6 +103,11 @@ hr {
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
+    clear: both;
+}
+.lite {
+    border-top: 1px solid #eee;
+    margin: 0;
 }
 .topic-box {
     background-color: white;
@@ -187,10 +192,10 @@ hr {
     padding: 5px;
     outline: none;
 }
-#vote-up {
+.vote-up {
     outline: none;
 }
-#vote-down {
+.vote-down {
     outline: none;
 }
 .button-down {
@@ -239,15 +244,6 @@ hr {
 .topic-tags a:hover {
     color: black;
 }
-.lite {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #eeeeee;
-    margin: 0;
-    padding: 0;
-    clear: both;
-}
 .button-answer, .button-report {
     display: inline-block;
     font-size: 1.2rem;
@@ -267,6 +263,22 @@ hr {
     text-decoration: none;
 }
 .topic-box-answer {
-    padding-top: 20px;
-    margin-top: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 1px 1px 8px #c5c5c5;
+}
+@media only screen and (max-width: 400px) {
+    #forum-nav {
+        width: 100%;
+    }
+    #forum-nav li {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    #forum-nav li a {
+        display: block;
+        font-size: 1.4rem;
+        width: 100%;
+    }
 }
