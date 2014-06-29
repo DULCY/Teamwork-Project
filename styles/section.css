@@ -16,8 +16,10 @@ body,section{
     padding: 0px 15px 0px 15px;
 }
 
-.actions{
-	width: 200px;
+.upcomingCoursesFirst, .upcomingCoursesSec{
+	padding-top:15px;
+	padding-bottom:15px;
+	margin-bottom:0px;
 }
 
 .actions a{  
@@ -32,12 +34,34 @@ body,section{
     background-color: #FF9C00;
 }
 
+.actionsRight a{  
+    border: 2px solid #FF9C00;
+	display:inline-block;
+    padding: 10px;
+    text-align: center;
+}
+
+.actionsRight a:hover{
+    color: #eee;
+    background-color: #FF9C00;
+}
+
+.actionsRight {
+    margin-left:65%;
+
+}
+
+.leftLink, .rightLink, .middleColLink{
+	width:120px;
+}
+
 .upcomingCoursesFirst, .upcomingCoursesSec{
 	border-top:1px solid black;
 }
 
 .upcomingCoursesSec{
 	border-bottom:1px solid black;
+	margin-bottom:60px;
 }
 
 
@@ -46,11 +70,9 @@ body,section{
 }
 
 .caption{
-	background:yellow;
-}
-
-.upcomingCoursesSec{
-	margin-bottom:38%;
+	background:#ff9c00;
+	height:35px;
+	margin-top:-3px;
 }
 
 .articleContainer div{
