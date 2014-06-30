@@ -8,6 +8,12 @@ body,section{
 	font-size: 0;
 	width:100%;
 }
+
+a{
+	text-decoration:none;
+	color:#234465;
+}
+
 .leftColumn, .middleColumn, .rightColumn{
 	display:inline-block;
 	width: 28%;
@@ -47,7 +53,6 @@ body,section{
 
 .actionsRight {
     margin-left:65%;
-
 }
 
 .leftLink, .rightLink, .middleColLink{
