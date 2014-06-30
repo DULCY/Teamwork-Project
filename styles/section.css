@@ -13,19 +13,14 @@ body,section{
 	width: 28%;
     font-family: 'PT Sans', Tahoma, sans-serif;
     font-size: 13px;
-    padding: 0px 15px 0px 15px;
+    padding: 0 15px 0 15px;
 }
 
-<<<<<<< .mine
-=======
 .upcomingCoursesFirst, .upcomingCoursesSec{
 	padding-top:15px;
 	padding-bottom:15px;
-	margin-bottom:0px;
+	margin-bottom:0;
 }
->>>>>>> .r40
-
-
 .actions a{  
     border: 2px solid #FF9C00;
 	display:inline-block;
@@ -81,8 +76,11 @@ body,section{
 
 .articleContainer div{
 	display:inline-block;
-}
 
+}
+.articleContainer div a{
+    color: #23448F;
+}
 .rightColumn img{
 	display:block;
 }
