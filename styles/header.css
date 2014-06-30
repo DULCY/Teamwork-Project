@@ -20,7 +20,7 @@ ul{
 .nav .open>a:focus{
     background-color: #FF9C00;
 }
-a{
+header a{
     color: white;
     font-family:sans-serif;
     font-size:14px;
