@@ -57,7 +57,7 @@ a{
     padding: 5px 0 5px 10px;
     border-bottom: 1px solid #435F7B;
     border-radius: 0;
-    min-width: 180px;
+    width: 100%;
 }
 .logo-container img{
     height: 65px;

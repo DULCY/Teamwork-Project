@@ -17,7 +17,8 @@ a.righty-arrow{
     height: 59px;
 }
 .item img{
-    width: 100%;
+    min-height: 500px; !important;
+    max-height: 500px; !important;
 }
 .slide{
     margin-top: 20px;
