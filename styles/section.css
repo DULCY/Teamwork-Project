@@ -17,9 +17,9 @@ body,section{
 }
 
 .upcomingCoursesFirst, .upcomingCoursesSec{
-	padding-top:15px;
-	padding-bottom:15px;
-	margin-bottom:0;
+
+
+	line-height: 4.4;
 }
 .actions a{  
     border: 2px solid #FF9C00;
@@ -51,7 +51,8 @@ body,section{
 }
 
 .leftLink, .rightLink, .middleColLink{
-	width:120px;
+	width:170px;
+    color: #23448F;
 }
 
 .upcomingCoursesFirst, .upcomingCoursesSec{
@@ -76,7 +77,7 @@ body,section{
 
 .articleContainer div{
 	display:inline-block;
-
+    margin-top: 10%;
 }
 .articleContainer div a{
     color: #23448F;
@@ -86,9 +87,12 @@ body,section{
 }
 
 .padding{
-	margin-top:30%;
+	margin-top:15%;
 }
 
 .rightColLink{
 	display:block;
+}
+.section-btn{
+    color: #23448F;
 }
