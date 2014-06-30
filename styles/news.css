@@ -1,0 +1,65 @@
+.news-h1 {
+    color: #234465;
+    padding: 30px 0 0 15px;
+    font-size: 24px;
+}
+.news-container {
+    background-color: #ffffff;
+    padding: 10px 35px;
+    height: 420px;
+    overflow: hidden;
+    box-shadow: 1px 1px 8px #c5c5c5;
+}
+.news-container h2 {
+    color: #234465;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0 0 15px 0;
+}
+.image-news {
+    display: block;
+    width: 100%;
+    height: 100px;
+    background: url("../resources/calendar.jpg") no-repeat center;
+    margin-bottom: 15px;
+}
+.news-container time {
+    display: block;
+    width: 100%;
+    text-align: right;
+}
+.news-container .tags {
+    font-size: 12px;
+    font-weight: bold;
+}
+.news-container .tags a {
+    text-transform: none;
+    color: #999;
+    font-weight: normal;
+}
+.paging-bar-news {
+    display: block;
+    margin: 50px 0 10px 15px;
+}
+.paging-bar-news li {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+.paging-bar-news li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    color: #ffffff;
+    background: #4CA0DB;
+    text-decoration: none;
+    font-weight: normal;
+    text-transform: none;
+}
+.paging-bar-news li a:hover {
+    background-color: #FF9C00;
+}
