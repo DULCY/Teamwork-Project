@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
@@ -9,43 +9,53 @@
     <link rel="stylesheet" href="styles/header.css" type="text/css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet"  href="styles/section.css">
-    <link rel="stylesheet" href="styles/courses.css">
+    <link rel="stylesheet" href="styles/professions.css">
     <link rel="stylesheet" href="styles/common.css" type="text/css">
     <link rel="stylesheet" href="styles/slider.css" type="text/css">
-	
-    <script src="scripts/jquery-2.1.1.min.js"></script>
+
+	<script src="scripts/jquery-2.1.1.min.js"></script>
     <script src="scripts/js/bootstrap.min.js"></script>
 
     <script>
+	$(document).ready(function(){ // wait until the DOM is ready, then do:
+		$('#java').bind({
+			click: function() {
+			$("#courses").load("prof-java-hater.html");
+			}
+		});
+		$('#wordpress').bind({
+			click: function() {
+			$("#courses").load("prof-wordpress.html");
+			}
+		});
+	});
+		  
         $(function(){
             $("#includedHeader").load("header.html");
             $("#includedFooter").load("footer.html");
-			
-			$("#java").click(function(){
-				$("#cont").html("ttttt");
-			});
         });
     </script>
 </head>
 <body>
 <div id="includedHeader"></div>
-
 <div class="body-container">
     <div class="container">
+		<h3>Професии</h3>
         <aside class="col-md-3">
-            <h3>Ниво:</h3>
-            <span class="levels"><a href="#" id="#java">Ниво 0 - подготовка</a></span>
-            <span class="levels"><a href="#">Ниво 1 - програмиране и уеб</a></span>
-            <span class="levels"><a href="#">Ниво 2 - C#, ООП, КПК, JS</a></span>
-            <span class="levels"><a href="#">Ниво 2 - изграждане на сайтове</a></span>
+            <h2>ЛИСТ</h2>
+            <span class="levels"><a href="#" id="java">Java hater</a></span>
+            <span class="levels"><a href="#" id="wordpress">Wordpress Lover </a></span>
+            <span class="levels"><a href="#">senior burger developer</a></span>
+            <span class="levels"><a href="#">senior cashier</a></span>
         </aside>
+		<aside>
         <main class="col-md-9">
-            <h1>Всички курсове</h1>
-            <div class="courses-names col-sm-3"><a href="#" id="cont">Въведение в онанирането</a></div>
+            <div class="courses-names">
+				<div id="courses"></div>
+			</div>
         </main>
     </div>
 </div>
-
 <div id="includedFooter"></div>
 </body>
 </html>

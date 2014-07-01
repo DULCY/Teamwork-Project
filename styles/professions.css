@@ -1,0 +1,59 @@
+aside {
+    background-color: #234465;
+    margin-top: 20px;
+}
+.levels {
+    display: block;
+    padding: 10px 0;
+}
+.levels:last-child {
+    margin-bottom: 20px;
+}
+.levels a {
+    display: block;
+    color: #ffffff;
+    text-transform: none;
+    text-decoration: none;
+    font-weight: normal;
+    height: 100%;
+}
+.levels a:hover {
+    color: #FF9C00;
+    text-decoration: none;
+}
+aside h3 {
+    color: #FF9C00;
+}
+main {
+    margin-top: 12px;
+}
+main h1 {
+    color: #5A5A5A;
+    margin: 5px 10px;
+}
+
+.courses-names {
+    display: inline-block;
+	background-color:#ffffff;
+	width:100%;
+	height:300px;
+    padding: 0;
+    margin: 10px 0;
+}
+.courses-names a {
+    display: block;
+    background-color: #ffffff;
+    height: 70px;
+    width: 100%;
+    color: #234465;
+    text-align: center;
+    text-decoration: none;
+    font-weight: normal;
+    text-transform: none;
+    padding: 10px;
+}
+.courses-names a:hover {
+    color: #FF9C00;
+    background-color: #234465;
+    text-decoration: none;
+}
