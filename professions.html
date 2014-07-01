@@ -43,6 +43,21 @@
 		});
 	});
 		  
+	$(function () {
+    $('div.container > a').click(function(){
+        if ($(this).hasClass('selected')) {
+		debugger;
+                $(this).removeClass('selected');
+                //Insert logic if you want a type of optional click/off click code
+            } 
+            else
+            {
+                $(this).addClass('selected');
+                //Insert event handling logic
+            }
+    })
+});	  
+		  
 	$(function(){
 		$("#includedHeader").load("header.html");
 		$("#includedFooter").load("footer.html");
