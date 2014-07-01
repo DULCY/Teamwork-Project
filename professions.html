@@ -23,17 +23,30 @@
 			$("#courses").load("prof-java-hater.html");
 			}
 		});
+		
 		$('#wordpress').bind({
 			click: function() {
 			$("#courses").load("prof-wordpress.html");
 			}
 		});
+		
+		$('#burger').bind({
+			click: function() {
+			$("#courses").load("prof-burger.html");
+			}
+		});
+		
+		$('#cashier').bind({
+			click: function() {
+			$("#courses").load("prof-cashier.html");
+			}
+		});
 	});
 		  
-        $(function(){
-            $("#includedHeader").load("header.html");
-            $("#includedFooter").load("footer.html");
-        });
+	$(function(){
+		$("#includedHeader").load("header.html");
+		$("#includedFooter").load("footer.html");
+	});
     </script>
 </head>
 <body>
@@ -41,20 +54,30 @@
 <div class="body-container">
     <div class="container">
 		<h3>Професии</h3>
-        <aside class="col-md-3">
-            <h2>ЛИСТ</h2>
-            <span class="levels"><a href="#" id="java">Java hater</a></span>
-            <span class="levels"><a href="#" id="wordpress">Wordpress Lover </a></span>
-            <span class="levels"><a href="#">senior burger developer</a></span>
-            <span class="levels"><a href="#">senior cashier</a></span>
-        </aside>
+		<aside class="col-md-3">
+				<h2>ЛИСТ</h2>
+				<span class="levels"><a href="#" id="java">Java hater</a></span>
+				<span class="levels"><a href="#" id="wordpress">Wordpress Lover </a></span>
+				<span class="levels"><a href="#" id="burger">senior burger developer</a></span>
+				<span class="levels"><a href="#" id="cashier">senior cashier</a></span>
+		</aside>
 		<aside>
-        <main class="col-md-9">
-            <div class="courses-names">
-				<div id="courses"></div>
-			</div>
-        </main>
-    </div>
+			<main class="col-md-9">
+		<div class="courses-names">
+					<div id="courses">
+					<h2>Java Hater</h2>
+					<p>
+			Java hater
+			  Една от най-бързо налагащите се професии на пазара. Първо малко думи за самата джава.Джавата е като алцхаймера тръгва бавно и евентуално заема цялата ви памет. След като джава е ултимативно рулиращия и най-силният програмен език във вселената,
+			 някои ще си кажат че е лесна за научаване. И вероятно ще бъдат прави.Дори и едноръка китайска маймуна ще се научи как се пише,  тъй като това не е език с който се създава нещо вършещо работа, a сложна програма за copy-paste.това и много други 
+			 неща ще ви станат ясни в професията джава хейтър.
+			 junior Jh. основните дисциплини в процеса на обучение(тролене на JDK(java develop kit);осмиване на джава кода или "20 начина да изпринтим hello world с по-малко от 5 реда код.)
+			 Senior Jh. натякване посредством C#;Python и дори Pascal как може да се пише по-читав код без грешки от java
+					</p>
+				</div>
+			</main>
+		</aside>
+		</div>
 </div>
 <div id="includedFooter"></div>
 </body>
