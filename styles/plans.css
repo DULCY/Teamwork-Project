@@ -8,3 +8,30 @@
 .header p{
     margin-top: 20px;
 }
+.center span{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+td.center{
+    text-align: center;!important;
+
+}
+td.center:first-of-type{
+    text-align: left;
+
+}
+.glyphicon-ok{
+    color: green;
+}
+.glyphicon-remove{
+    color: darkred;
+}
+th{
+    background-color: #234465;
+    color: #ffffff;
+}
+tr:first-of-type td{
+    background-color: lightgray;
+    border-top: none;
+}
