@@ -54,6 +54,7 @@ footer span {
 iframe{
     overflow:hidden;
     width: 250px;
-    height: 200px;
     background-color: rgb(242,245,245);
+    border:none;
+    height: 230px;
 }
