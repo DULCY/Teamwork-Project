@@ -9,7 +9,7 @@ footer{
     margin-top: 20px;
 }
 .actions a{
-    display: block;
+    display: block; !important;
     border: 2px solid #FF9C00;
     padding: 10px;
     text-align: center;
