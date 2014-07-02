@@ -7,10 +7,6 @@ a {
 a:hover {
     text-decoration: underline;
 }
-time {
-    color: #adadad;
-
-}
 #forum-nav {
     display: block;
     margin: 20px 0 10px 15px;
@@ -135,6 +131,7 @@ hr {
     height: 14px;
 }
 .meta-time {
+    color: #adadad;
     display: inline-block;
     background: url("../images/softUni_Icons.png") 42px 0;
     width: 19px;
